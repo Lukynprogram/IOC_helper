@@ -16,7 +16,7 @@ with open(f'{q0}', 'r') as f:
         else:
             continue
     uniq_mezera = '\n'.join(uniq)
-q1 = input("Do you want to create new text file with list of IPs? Y/N: ").replace(' ', '')
+q1 = input("Do you want to create new text file with list of IOCs? Y/N: ").replace(' ', '')
 if q1 == "Y" or q1 == "y":
     q2 = input("How it should be called? (without .txt): ").replace(' ', '')
     os.system(f"touch {q2}.txt")
