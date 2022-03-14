@@ -9,7 +9,7 @@ except:
     exit
 with open(f'{q0}', 'r') as f:
     for i in range(0, num_lines):
-        lajna = str(f.readline().replace('\n', ''))
+        lajna = str(f.readline().replace('\n', '').replace('[', '').replace(']', ''). replace('hxxp', 'http').replace('hxxps', 'https'))
         ips.append(lajna)
         if lajna not in uniq:
             uniq.append(lajna)
